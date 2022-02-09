@@ -1,0 +1,12 @@
+{
+    "name": "technologyadvocates/helpdeskbuttonsapiemulator",
+    "require": {},
+    "config": {
+        "prepend-autoloader": false
+    },
+    "authors": [
+        {
+            "name": "Technology Advocates"
+        }
+    ]
+}
