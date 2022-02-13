@@ -14,4 +14,9 @@
         'uses' => 'TicketController@createTicket'
     ]);
 
+    $api->get('plugin/helpdeskbuttons/api/v2/groups', [
+        'as'   => 'plugin.helpdeskbuttons.api.get.departments',
+        'uses' => 'DepartmentController@getDepartments'
+    ]);
+
 });
