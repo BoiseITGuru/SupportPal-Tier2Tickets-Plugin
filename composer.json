@@ -1,6 +1,5 @@
 {
     "name": "technologyadvocates/helpdeskbuttonsapiemulator",
-    "require": {},
     "config": {
         "prepend-autoloader": false
     },
