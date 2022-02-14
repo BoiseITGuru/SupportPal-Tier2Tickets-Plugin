@@ -41,7 +41,7 @@ class UsersController extends BaseApiController
         $user = User::where($whereCondition)->first();
 
         if ($user) {
-            return $user;
+            return [$user];
         } else {
             return;
         }
@@ -64,7 +64,7 @@ class UsersController extends BaseApiController
         $user = User::where($whereCondition)->first();
 
         if ($user) {
-            return $user;
+            return [$user];
         } else {
             return;
         }
