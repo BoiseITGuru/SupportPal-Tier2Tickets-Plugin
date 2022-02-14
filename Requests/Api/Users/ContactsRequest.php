@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace App\Plugins\HelpdeskButtonsAPIEmulator\Requests\Api\Operators;
+namespace App\Plugins\HelpdeskButtonsAPIEmulator\Requests\Api\Users;
 
 use App\Http\ApiFormRequest;
 use Illuminate\Support\Carbon;
