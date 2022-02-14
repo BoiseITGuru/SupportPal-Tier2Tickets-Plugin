@@ -19,4 +19,9 @@
         'uses' => 'DepartmentController@getDepartments'
     ]);
 
+    $api->get('plugin/helpdeskbuttons/api/v2/agents', [
+        'as'   => 'plugin.helpdeskbuttons.api.get.operators',
+        'uses' => 'OperatorsController@getOperators'
+    ]);
+
 });
