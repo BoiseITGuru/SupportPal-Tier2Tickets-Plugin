@@ -13,10 +13,10 @@ use function mb_strtolower;
 use function mb_strimwidth;
 use function trans;
 
-class OperatorsController extends BaseApiController
+class UsersController extends BaseApiController
 {
     /**
-     * TicketController constructor.
+     * UsersController constructor.
      */
     public function __construct()
     {
@@ -42,7 +42,30 @@ class OperatorsController extends BaseApiController
         if ($user) {
             return $user;
         } else {
-            return $ticket;
+            return;
+        }
+    }
+
+    /**
+     * @param ContactsRequest $request
+     * @return mixed
+     */
+    public function getContacts(ContactsRequest $request)
+    {
+        //Get Query Data
+        $email = $request->input('email');
+
+        //Check if user exists
+        $whereCondition = [
+            ['email', '=', $email]
+        ];
+
+        $user = User::where($whereCondition)->first();
+
+        if ($user) {
+            return $user;
+        } else {
+            return;
         }
     }
 }

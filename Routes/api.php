@@ -21,7 +21,12 @@
 
     $api->get('plugin/helpdeskbuttons/api/v2/agents', [
         'as'   => 'plugin.helpdeskbuttons.api.get.operators',
-        'uses' => 'OperatorsController@getOperators'
+        'uses' => 'UsersController@getOperators'
+    ]);
+
+    $api->get('plugin/helpdeskbuttons/api/v2/contacts', [
+        'as'   => 'plugin.helpdeskbuttons.api.get.operators',
+        'uses' => 'UsersController@getContacts'
     ]);
 
 });
