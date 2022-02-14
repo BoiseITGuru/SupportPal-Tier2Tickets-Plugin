@@ -4,6 +4,7 @@ namespace App\Plugins\HelpdeskButtonsAPIEmulator\Controllers\Api;
 
 use App\Modules\Core\Controllers\BaseApiController;
 use App\Plugins\HelpdeskButtonsAPIEmulator\Requests\Api\Operators\AgentsRequest;
+use App\Plugins\HelpdeskButtonsAPIEmulator\Requests\Api\Tickets\ContactsRequest;
 use App\Modules\User\Models\User;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
