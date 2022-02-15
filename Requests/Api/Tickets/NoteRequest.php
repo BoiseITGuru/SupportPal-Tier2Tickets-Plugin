@@ -28,7 +28,7 @@ class NoteRequest extends ApiFormRequest
             'attachments'       => ['file'],
             'body'              => ['required', 'string'],
             'incoming'          => ['boolean'],
-            'notify_emails'     => ['string'],
+            'notify_emails'     => [],
             'private'           => ['boolean'],
             'user_id'           => ['integer'],
         ];
