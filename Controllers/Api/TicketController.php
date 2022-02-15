@@ -12,6 +12,7 @@ use App\Modules\Ticket\Events\TicketCreated;
 use App\Modules\User\Models\User;
 use App\Modules\User\Models\UserOrganisationDomain;
 use App\Plugins\HelpdeskButtonsAPIEmulator\Requests\Api\Tickets\StoreRequest;
+use App\Plugins\HelpdeskButtonsAPIEmulator\Requests\Api\Tickets\NoteRequest;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 use function call_user_func;
@@ -137,7 +138,7 @@ class TicketController extends BaseApiController
      * @param int $ticketId
      * @return mixed
      */
-    public function addNote(int $ticketId)
+    public function addNote(NoteRequest $request, int $ticketId)
     {
         /**
          * TO DO
