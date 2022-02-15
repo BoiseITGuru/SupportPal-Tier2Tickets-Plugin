@@ -155,7 +155,7 @@ class TicketController extends BaseApiController
         
 
         //Create ticket message
-        Message::create([
+        $note = Message::create([
             'ticket_id'     => $ticketId,
             'channel_id'    => 3,
             'user_id'       => $user_id,
@@ -166,5 +166,7 @@ class TicketController extends BaseApiController
             'text'          => $body,
             'purified_text' => $body
         ]);
+
+        return $note;
     }
 }
