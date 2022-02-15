@@ -14,6 +14,11 @@
         'uses' => 'TicketController@createTicket'
     ]);
 
+    $api->post('plugin/helpdeskbuttons/api/v2/tickets/{ticketId}/notes', [
+        'as'   => 'plugin.helpdeskbuttons.api.ticket.create',
+        'uses' => 'TicketController@addNote'
+    ]);
+
     $api->get('plugin/helpdeskbuttons/api/v2/groups', [
         'as'   => 'plugin.helpdeskbuttons.api.get.departments',
         'uses' => 'DepartmentController@getDepartments'

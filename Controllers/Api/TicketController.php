@@ -131,4 +131,39 @@ class TicketController extends BaseApiController
 
         return $ticket;
     }
+
+
+    /**
+     * @param int $ticketId
+     * @return mixed
+     */
+    public function addNote(int $ticketId)
+    {
+        /**
+         * TO DO
+         * EVERYTHING LOL
+         */
+
+        //Get POST Data
+        $attachments = $request->input('attachments');
+        $body = $request->input('body');
+        $incoming = $request->input('incoming');
+        $notify_emails = $request->input('notify_emails');
+        $private = $request->input('private');
+        $user_id = $request->input('user_id');
+        
+
+        //Create ticket message
+        Message::create([
+            'ticket_id'     => $ticketId,
+            'channel_id'    => 3,
+            'user_id'       => $user_id,
+            'user_name'     => 'Helpdesk Buttons',
+            'by'            => 1,
+            'type'          => 1,
+            'excerpt'       => "Helpdesk Buttons Report...",
+            'text'          => $body,
+            'purified_text' => $body
+        ]);
+    }
 }
