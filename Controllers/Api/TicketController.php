@@ -59,6 +59,24 @@ class TicketController extends BaseApiController
         $department_id = $request->input('custom_fields.department');
         $source = $request->input('source');
 
+        //Match Statuses
+        switch ($status) {
+            case 2:
+                $status = 1;
+                break;
+            case 3:
+                $status = 1;
+                break;
+            case 4:
+                $status = 2;
+                break;
+            case 5:
+                $status = 2;
+                break;
+            default:
+                $status = 1;
+        }
+
         //Check if user exists
         $whereCondition = [
             ['email', '=', $email],
