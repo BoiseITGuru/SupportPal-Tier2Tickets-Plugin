@@ -1,9 +1,14 @@
 # SupportPal-Tier2Tickets-Plugin
 
-This semi-functional proof of concept with several values still hard coded.
+## Introduction
 
-KNOWN ISSUES:
-Cannot have agent or group filled in on the Helpdesk Buttons Integration Defaults
+> This semi-functional proof of concept with several values still hard coded.
 
 
-Instalation Instructions (and proper README) Coming Soon
+This plugin replicates the needed API endpoints to integrate Tier2Ticket's Helpdesk Buttons with SupportPal using their Freshdesk integration.
+
+## Instalation
+> Instalation Instructions (and proper README) Coming Soon
+
+## KNOWN ISSUES
+> Cannot have agent or group filled in on the Helpdesk Buttons Integration Defaults
