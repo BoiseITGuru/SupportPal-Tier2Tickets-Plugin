@@ -66,7 +66,8 @@ class UsersController extends BaseApiController
         $response = array(
             'active'    => true,
             'name'      => $user['formatted_name'],
-            'email'     => $user['email']
+            'email'     => $user['email'],
+            'company_id'    => 'Test Company'
         );
 
         if ($user) {
