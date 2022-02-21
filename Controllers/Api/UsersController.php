@@ -63,8 +63,14 @@ class UsersController extends BaseApiController
 
         $user = User::where($whereCondition)->first();
 
+        $response = array(
+            'active'    => true,
+            'name'      => $user['formatted_name'],
+            'email'     => $user['email']
+        );
+
         if ($user) {
-            return [$user];
+            return [$response];
         } else {
             return;
         }
