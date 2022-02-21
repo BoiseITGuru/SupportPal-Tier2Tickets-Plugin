@@ -69,7 +69,11 @@ class UsersController extends BaseApiController
             'email'         => $user['email'],
             'company_id'    => $user['organisation_id'],
             'id'            => $user['id'],
-            'phone'         => '2087179590'
+            'phone'         => '2087179590',
+            'mobile'        => '2087179590',
+            'time_zone'     => 'America/Boise',
+            'created_at'    => '2015-08-18T16:18:14Z',
+            'updated_at'    => '2015-08-18T16:18:14Z'
         );
 
         if ($user) {
